@@ -203,9 +203,9 @@ Successfully installed absl-py-2.1.0 astunparse-1.6.3 cachetools-5.5.0 flatbuffe
 </p>
 
 In order to do so, you need to add the `hf-nlp-course` virtual envrionment that you have created as a python kernel.
-1. activate the `hf-nlp-course` virtual environment, if it's not activated:
+1. activate the `vit` virtual environment, if it's not activated:
 ```
-[glogin01]$ conda activate hf-nlp-course
+[glogin01]$ conda activate vit
 ```
 2. install Jupyter on the virtual environment:
 ```

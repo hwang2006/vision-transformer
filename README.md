@@ -181,17 +181,14 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 
-(vit) [glogin01]$ pip install matplotlib einops torchsummary tqdm
+(vit) [glogin01]$ pip install matplotlib einops torchsummary tqdm scikit-learn
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting matplotlib
+  Downloading matplotlib-3.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
 .
 .
-.
-Installing collected packages: libclang, flatbuffers, wrapt, werkzeug, typeguard, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, pyasn1, protobuf, packaging, oauthlib, numpy, markdown, keras, grpcio, gast, cachetools, absl-py, tensorflow_addons, rsa, requests-oauthlib, pyasn1-modules, opt-einsum, ml-dtypes, h5py, google-pasta, astunparse, google-auth, google-auth-oauthlib, tensorboard, tensorflow
-  Attempting uninstall: numpy
-    Found existing installation: numpy 2.0.1
-    Uninstalling numpy-2.0.1:
-      Successfully uninstalled numpy-2.0.1
-Successfully installed absl-py-2.1.0 astunparse-1.6.3 cachetools-5.5.0 flatbuffers-24.3.25 gast-0.6.0 google-auth-2.35.0 google-auth-oauthlib-1.2.1 google-pasta-0.2.0 grpcio-1.66.1 h5py-3.11.0 keras-2.15.0 libclang-18.1.1 markdown-3.7 ml-dtypes-0.2.0 numpy-1.26.4 oauthlib-3.2.2 opt-einsum-3.3.0 packaging-24.1 protobuf-4.25.5 pyasn1-0.6.1 pyasn1-modules-0.4.1 requests-oauthlib-2.0.0 rsa-4.9 six-1.16.0 tensorboard-2.15.2 tensorboard-data-server-0.7.2 tensorflow-2.15.0 tensorflow-estimator-2.15.0 tensorflow-io-gcs-filesystem-0.37.1 tensorflow_addons-0.23.0 termcolor-2.4.0 typeguard-2.13.3 werkzeug-3.0.4 wrapt-1.14.1
+Installing collected packages: torchsummary, tqdm, six, pyparsing, packaging, kiwisolver, fonttools, einops, cycler, contourpy, python-dateutil, matplotlib
+Successfully installed contourpy-1.3.0 cycler-0.12.1 einops-0.8.0 fonttools-4.54.1 kiwisolver-1.4.7 matplotlib-3.9.2 packaging-24.1 pyparsing-3.1.4 python-dateutil-2.9.0.post0 six-1.16.0 torchsummary-1.5.1 tqdm-4.66.5
 ```
 
 ## Running Jupyter

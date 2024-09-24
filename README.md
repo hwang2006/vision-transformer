@@ -164,51 +164,38 @@ Executing transaction: done
 Now, you need to install Python packages for the `vit` virtual environment.  
 ```
 [glogin01]$ conda activate vit
+(vit) [glogin01]$ conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+ pytorch-cuda=12.1 -c pytorch -c nvidia
+Channels:
+ - pytorch
+ - nvidia
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+.
+.
+.
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
 (vit) [glogin01]$ pip install tensorflow==2.15.0  tensorflow_addons 
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
-Requirement already satisfied: tensorflow==2.15.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (2.15.0)
-Requirement already satisfied: tensorflow_addons in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (0.23.0)
-Requirement already satisfied: absl-py>=1.0.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (2.1.0)
-Requirement already satisfied: astunparse>=1.6.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (1.6.3)
-Requirement already satisfied: flatbuffers>=23.5.26 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (24.3.25)
-Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (0.6.0)
-Requirement already satisfied: google-pasta>=0.1.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (0.2.0)
-Requirement already satisfied: h5py>=2.9.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (3.11.0)
-Requirement already satisfied: libclang>=13.0.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (18.1.1)
-Requirement already satisfied: ml-dtypes~=0.2.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (0.2.0)
-Requirement already satisfied: numpy<2.0.0,>=1.23.5 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (1.26.4)
-Requirement already satisfied: opt-einsum>=2.3.2 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (3.3.0)
-Requirement already satisfied: packaging in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (24.1)
-Requirement already satisfied: protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (4.25.5)
-Requirement already satisfied: setuptools in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (75.1.0)
-Requirement already satisfied: six>=1.12.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (1.16.0)
-Requirement already satisfied: termcolor>=1.1.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (2.4.0)
-Requirement already satisfied: typing-extensions>=3.6.6 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (4.11.0)
-Requirement already satisfied: wrapt<1.15,>=1.11.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (1.14.1)
-Requirement already satisfied: tensorflow-io-gcs-filesystem>=0.23.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (0.37.1)
-Requirement already satisfied: grpcio<2.0,>=1.24.3 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (1.66.1)
-Requirement already satisfied: tensorboard<2.16,>=2.15 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (2.15.2)
-Requirement already satisfied: tensorflow-estimator<2.16,>=2.15.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (2.15.0)
-Requirement already satisfied: keras<2.16,>=2.15.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow==2.15.0) (2.15.0)
-Requirement already satisfied: typeguard<3.0.0,>=2.7 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorflow_addons) (2.13.3)
-Requirement already satisfied: wheel<1.0,>=0.23.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from astunparse>=1.6.0->tensorflow==2.15.0) (0.44.0)
-Requirement already satisfied: google-auth<3,>=1.6.3 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2.35.0)
-Requirement already satisfied: google-auth-oauthlib<2,>=0.5 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (1.2.1)
-Requirement already satisfied: markdown>=2.6.8 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (3.7)
-Requirement already satisfied: requests<3,>=2.21.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2.32.3)
-Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (0.7.2)
-Requirement already satisfied: werkzeug>=1.0.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from tensorboard<2.16,>=2.15->tensorflow==2.15.0) (3.0.4)
-Requirement already satisfied: cachetools<6.0,>=2.0.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (5.5.0)
-Requirement already satisfied: pyasn1-modules>=0.2.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (0.4.1)
-Requirement already satisfied: rsa<5,>=3.1.4 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (4.9)
-Requirement already satisfied: requests-oauthlib>=0.7.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from google-auth-oauthlib<2,>=0.5->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2.0.0)
-Requirement already satisfied: charset-normalizer<4,>=2 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (3.3.2)
-Requirement already satisfied: idna<4,>=2.5 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (3.7)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2.2.2)
-Requirement already satisfied: certifi>=2017.4.17 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2024.8.30)
-Requirement already satisfied: MarkupSafe>=2.1.1 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from werkzeug>=1.0.1->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (2.1.3)
-Requirement already satisfied: pyasn1<0.7.0,>=0.4.6 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (0.6.1)
-Requirement already satisfied: oauthlib>=3.0.0 in /scratch/qualis/miniconda3/envs/vit/lib/python3.10/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<2,>=0.5->tensorboard<2.16,>=2.15->tensorflow==2.15.0) (3.2.2)
+Collecting tensorflow==2.15.0
+  Downloading tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+Collecting tensorflow_addons
+.
+.
+.
+Installing collected packages: libclang, flatbuffers, wrapt, werkzeug, typeguard, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, pyasn1, protobuf, packaging, oauthlib, numpy, markdown, keras, grpcio, gast, cachetools, absl-py, tensorflow_addons, rsa, requests-oauthlib, pyasn1-modules, opt-einsum, ml-dtypes, h5py, google-pasta, astunparse, google-auth, google-auth-oauthlib, tensorboard, tensorflow
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.0.1
+    Uninstalling numpy-2.0.1:
+      Successfully uninstalled numpy-2.0.1
+Successfully installed absl-py-2.1.0 astunparse-1.6.3 cachetools-5.5.0 flatbuffers-24.3.25 gast-0.6.0 google-auth-2.35.0 google-auth-oauthlib-1.2.1 google-pasta-0.2.0 grpcio-1.66.1 h5py-3.11.0 keras-2.15.0 libclang-18.1.1 markdown-3.7 ml-dtypes-0.2.0 numpy-1.26.4 oauthlib-3.2.2 opt-einsum-3.3.0 packaging-24.1 protobuf-4.25.5 pyasn1-0.6.1 pyasn1-modules-0.4.1 requests-oauthlib-2.0.0 rsa-4.9 six-1.16.0 tensorboard-2.15.2 tensorboard-data-server-0.7.2 tensorflow-2.15.0 tensorflow-estimator-2.15.0 tensorflow-io-gcs-filesystem-0.37.1 tensorflow_addons-0.23.0 termcolor-2.4.0 typeguard-2.13.3 werkzeug-3.0.4 wrapt-1.14.1
 ```
 
 ## Running Jupyter
@@ -224,7 +211,6 @@ In order to do so, you need to add the `hf-nlp-course` virtual envrionment that 
 2. install Jupyter on the virtual environment:
 ```
 (vit) [glogin01]$ conda install jupyter chardet cchardet 
-  
 ```
 3. add the virtual environment as a jupyter kernel:
 ```
@@ -242,9 +228,10 @@ vit         /home01/$USER/.local/share/jupyter/kernels/vit
 ```
 (vit) [glogin01]$ conda deactivate
 ```
-- to create a batch script for launching a jupyter notebook server: 
+- to clone this repository and submit the `jupyter_run.sh` script for launching a jupyter notebook server: 
 ```
-[glogin01]$ cat jupyter_run.sh
+[glogin01]$ git clone https://github.com/hwang2006/vision-transformer.git
+[glogin01]$ cat vision-transformer/bin/jupyter_run.sh
 #!/bin/bash
 #SBATCH --comment=tensorflow
 ##SBATCH --partition=mig_amd_a100_4

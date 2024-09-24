@@ -1,6 +1,6 @@
 # vision-transformer
 
-This repository includes several brief implementations of the [Vision Transformer (ViT)](https://arxiv.org/abs/2010.11929) in TensorFlow, Keras, and PyTorch that you might want check out. The ViT was introduced in June 2021 by a team of researchers at Google Brain. 
+This repository offers several brief implementations of the [Vision Transformer (ViT)](https://arxiv.org/abs/2010.11929) in TensorFlow, Keras, and PyTorch that you might want check out. The ViT was introduced in June 2021 by a team of researchers at Google Brain. 
 
  
 **Contents**

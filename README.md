@@ -163,7 +163,6 @@ Executing transaction: done
 
 Now, you need to install Python packages for the `vit` virtual environment.  
 ```
-[glogin01]$ module load gcc/10.2.0 cuda/12.1 cmake/3.26.2
 [glogin01]$ conda activate vit
 (vit) [glogin01]$ conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.1 -c pytorch -c nvidia 
 Channels:
@@ -182,7 +181,6 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 
-<!-- (vit) [glogin01]$ pip install tensorflow tensorflow_addons matplotlib einops torchsummary tqdm -->
 (vit) [glogin01]$ pip install matplotlib einops torchsummary tqdm
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
 .

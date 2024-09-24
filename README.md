@@ -1,6 +1,6 @@
 # vision-transformer
 
-This repository provides implementations of vision transformers in Tensorflow, Keras and PyTroch. 
+This repository provides brief implementations of the [Vision Transformer(ViT)](https://arxiv.org/abs/2010.11929) in Tensorflow, Keras and PyTorch that you may want to take a look at. The ViT was introduced in June 2021 by a team of researchers at Google Brain.
 
 **Contents**
 * [KISTI Neuron GPU Cluster](#kisti-neuron-gpu-cluster)

@@ -181,7 +181,7 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 
-(vit) [glogin01]$ pip install tensorflow==2.15.0 tensorflow_addons matplotlib einops torchsummary tqdm
+(vit) [glogin01]$ pip install tensorflow==2.14.0 tensorflow_addons matplotlib einops torchsummary tqdm
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
 Collecting tensorflow==2.15.0
   Downloading tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)

@@ -181,7 +181,7 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 
-(vit) [glogin01]$ pip install matplotlib einops torchsummary tqdm scikit-learn
+(vit) [glogin01]$ pip install tensorflow tensorflow_addons matplotlib einops torchsummary tqdm scikit-learn
 Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
 Collecting matplotlib
   Downloading matplotlib-3.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)

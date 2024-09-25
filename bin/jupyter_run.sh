@@ -30,16 +30,13 @@ echo "ssh -L localhost:8888:${SERVER}:${PORT_JU} ${USER}@neuron.ksc.re.kr"
 #echo "ssh -L localhost:${PORT_JU}:${SERVER}:${PORT_JU} ${USER}@neuron.ksc.re.kr"
 
 echo "load module-environment"
-#module load gcc/10.2.0 cuda/11.6
-module load gcc/10.2.0 cuda/12.1 cudampi/openmpi-4.1.1 cmake/3.26.2
-#module load gcc/10.2.0 cuda/11.8 cudampi/openmpi-4.1.1 cmake/3.26.2
-export CUDA_DIR=${CUDADIR}
-export XLA_FLAGS=--xla_gpu_cuda_data_dir=${CUDADIR}
+module load gcc/10.2.0 cuda/12.1 cmake/3.26.2
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=${CUDA_HOME}
 
 echo "execute jupyter"
 source ~/.bashrc
 #conda activate vision
 conda activate vit
-cd /scratch/qualis/vit  # the root/work directory of Jupyter lab/notebook
+cd /scratch/qualis/vision-transformer  # the root/work directory of Jupyter lab/notebook
 jupyter lab --ip=0.0.0.0 --port=${PORT_JU} --no-browser --NotebookApp.token=${USER} #jupyter token: your account ID 
 echo "end of the job"

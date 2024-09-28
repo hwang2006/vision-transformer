@@ -2,7 +2,7 @@
 
 
 ### Some Observations on TensorFlow, Keras, and PyTorch ViT Implementations
-After running tf_vit.ipynb or keras_vit.ipynb, which may consume almost 100% of GPU memory and doesn't seem to release it, make sure to (via the pulldown menu of Jupyter notebook):
+After running tf_vit.ipynb or keras_vit.ipynb, which may consume almost 100% of GPU memory and doesn't seem to release it, make sure to (on the pulldown menu of Jupyter notebook):
 
 - Shut Down All Kernels...
 - Restart Kernel...

@@ -12,4 +12,4 @@ These steps are needed to clear the GPU memory after running the TensorFlow/Kera
 Interestingly, the TensorFlow/Keras implementations ran faster than the PyTorch implementations, even with the same datasets being fed. Regarding this performance difference, it was observed that the PyTorch implementations consumed only about half of the GPU memory, while the TensorFlow/Keras implementations utilized the entire GPU memory. 
 
 
-**`Question for further investigation`:** Does this mean that the TensorFlow/Keras implementations achieve 2x better GPU utilization than PyTorch with more data being fed somehow?
+**`Questions for further investigation`:** Does this mean that the TensorFlow/Keras implementations achieve 2x better GPU utilization than PyTorch with more data being fed somehow? Is this purely an implementation issue?
